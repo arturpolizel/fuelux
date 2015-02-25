@@ -74,6 +74,7 @@
 		addSteps: function (index) {
 			var items = [].slice.call(arguments).slice(1);
 			var $steps = this.$element.find('.steps');
+            this.numSteps = $steps.find('li').length;
 			var $stepContent = this.$element.find('.step-content');
 			var i, l, $pane, $startPane, $startStep, $step;
 
@@ -117,6 +118,7 @@
 			var action = 'nextAll';
 			var i = 0;
 			var $steps = this.$element.find('.steps');
+            this.numSteps = $steps.find('li').length;
 			var $stepContent = this.$element.find('.step-content');
 			var $start;
 
